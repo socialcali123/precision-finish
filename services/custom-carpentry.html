@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Custom Carpentry Services in Roseville, CA | Precision Finish</title>
+    <meta name="description" content="Premium custom carpentry services in Roseville, CA. From built-ins to custom millwork, our master craftsmen deliver exceptional quality with 40+ years of experience. Free consultations at (916) 229-8763.">
+    <meta name="keywords" content="custom carpentry, Roseville CA, built-ins, custom millwork, woodworking, cabinetry, custom furniture, home improvement, Precision Finish">
+    <link rel="canonical" href="https://www.precisionfinish.com/services/custom-carpentry.html">
+    <!-- Open Graph Meta Tags for social sharing -->
+    <meta property="og:title" content="Expert Custom Carpentry Services in Roseville, CA | Precision Finish">
+    <meta property="og:description" content="Premium custom carpentry services in Roseville, CA. From built-ins to custom millwork, our master craftsmen deliver exceptional quality.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.precisionfinish.com/services/custom-carpentry.html">
+    <meta property="og:image" content="https://www.precisionfinish.com/images/custom-carpentry-service.jpg">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles specific to service detail pages */
+        .service-hero {
+            height: 60vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/custom-finishes.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .service-overview {
+            padding: var(--spacing-xl) 0;
+        }
+        
+        .service-overview-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-lg);
+            align-items: center;
+        }
+        
+        .service-image {
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-slow);
+        }
+        
+        .service-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .service-benefits {
+            background-color: var(--light);
+            padding: var(--spacing-xl) 0;
+        }
+        
+        .benefits-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-lg);
+        }
+        
+        .benefit-item {
+            background-color: var(--white);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius-lg);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .benefit-icon {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin-right: var(--spacing-sm);
+            background-color: rgba(230, 126, 34, 0.1);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .service-process {
+            padding: var(--spacing-xl) 0;
+        }
+        
+        .process-steps {
+            margin-top: var(--spacing-lg);
+        }
+        
+        .process-step {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-lg);
+            align-items: flex-start;
+        }
+        
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background-color: var(--secondary-color);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+        
+        .gallery-section {
+            padding: var(--spacing-xl) 0;
+            background-color: var(--light);
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-lg);
+        }
+        
+        .gallery-item {
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            height: 250px;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-medium);
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .faq-section {
+            padding: var(--spacing-xl) 0;
+        }
+        
+        .faq-list {
+            margin-top: var(--spacing-lg);
+        }
+        
+        .faq-item {
+            margin-bottom: var(--spacing-md);
+            border-bottom: 1px solid var(--light);
+            padding-bottom: var(--spacing-md);
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            margin-bottom: var(--spacing-xs);
+            color: var(--primary-color);
+        }
+        
+        .carpentry-types {
+            padding: var(--spacing-xl) 0;
+        }
+        
+        .carpentry-types-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-lg);
+        }
+        
+        .carpentry-type-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .carpentry-type-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .carpentry-type-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-medium);
+        }
+        
+        .carpentry-type-card:hover .carpentry-type-image img {
+            transform: scale(1.1);
+        }
+        
+        .carpentry-type-content {
+            padding: var(--spacing-md);
+        }
+        
+        .carpentry-type-content h3 {
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        @media (max-width: 992px) {
+            .service-overview-content {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-md);
+            }
+            
+            .process-step {
+                grid-template-columns: 60px 1fr;
+            }
+            
+            .step-number {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Precision <span>Finish</span></h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="../services.html" class="dropdown-toggle active">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../services.html#interior">Interior Painting</a></li>
+                            <li><a href="../services.html#exterior">Exterior Painting</a></li>
+                            <li><a href="../services.html#cabinets">Cabinet Refinishing</a></li>
+                            <li><a href="../services.html#custom">Custom Finishes</a></li>
+                            <li><a href="../services.html#commercial">Commercial Painting</a></li>
+                            <li><a href="kitchen-cabinet-refinishing.html">Kitchen Cabinet Refinishing</a></li>
+                            <li><a href="home-exterior-repair.html">Home Exterior Repair</a></li>
+                            <li><a href="wall-paneling-installation.html">Wall Paneling Installation</a></li>
+                            <li><a href="interior-trim-installation.html">Interior Trim Installation</a></li>
+                            <li><a href="wainscoting.html">Wainscoting</a></li>
+                            <li><a href="custom-carpentry.html">Custom Carpentry</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../gallery.html">Our Work</a></li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Service Hero Section -->
+    <section class="hero" style="height: 50vh;">
+        <div class="hero-content">
+            <h1>Expert Custom Carpentry</h1>
+            <p>Premium quality custom woodworking and carpentry solutions</p>
+        </div>
+    </section>
+
+    <!-- Service Overview Section -->
+    <section class="service-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Transform Your Space With Custom Carpentry</h2>
+                <p>Bespoke woodworking solutions that combine beauty, functionality, and craftsmanship</p>
+            </div>
+            <div class="service-overview-content">
+                <div class="service-image">
+                    <img src="../images/custom-finishes.jpg" alt="Custom carpentry work">
+                </div>
+                <div class="service-text">
+                    <p>At Precision Finish, our custom carpentry services bring your unique vision to life with expert craftsmanship and meticulous attention to detail. From built-in bookshelves and entertainment centers to custom mantels, architectural details, and specialty millwork, our skilled carpenters create beautiful, functional woodwork that enhances your home's beauty and value.</p>
+                    
+                    <p>We understand that every space and homeowner has unique needs and preferences. That's why we take a collaborative approach to custom carpentry, working closely with you to design and create woodwork that perfectly complements your home's architecture and your personal style while addressing your specific functional requirements.</p>
+                    
+                    <p>Whether you're looking to maximize storage with built-ins, add architectural character with decorative beams, or create a stunning focal point with a custom mantel, our carpentry team combines traditional woodworking skills with modern techniques to deliver exceptional results that will be enjoyed for generations.</p>
+                    
+                    <div class="service-cta">
+                        <a href="tel:9162298763" class="btn btn-primary">Call (916) 229-8763</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carpentry Types Section -->
+    <section class="carpentry-types">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Custom Carpentry Services</h2>
+                <p>Explore our range of custom woodworking solutions for your home</p>
+            </div>
+            <div class="carpentry-types-grid">
+                <div class="carpentry-type-card">
+                    <div class="carpentry-type-image">
+                        <img src="../images/custom-finishes.jpg" alt="Custom built-in bookshelves">
+                    </div>
+                    <div class="carpentry-type-content">
+                        <h3>Built-In Cabinetry</h3>
+                        <p>Custom-designed built-ins that maximize storage while enhancing your home's aesthetic. From bookshelves and entertainment centers to window seats and office workstations, we create tailored solutions that perfectly fit your space.</p>
+                    </div>
+                </div>
+                <div class="carpentry-type-card">
+                    <div class="carpentry-type-image">
+                        <img src="../images/custom-finishes.jpg" alt="Custom fireplace mantel">
+                    </div>
+                    <div class="carpentry-type-content">
+                        <h3>Fireplace Mantels & Surrounds</h3>
+                        <p>Transform your fireplace into a stunning focal point with a custom-designed mantel and surround. We create everything from classic traditional designs to sleek contemporary styles that complement your home's architecture.</p>
+                    </div>
+                </div>
+                <div class="carpentry-type-card">
+                    <div class="carpentry-type-image">
+                        <img src="../images/custom-finishes.jpg" alt="Decorative ceiling beams">
+                    </div>
+                    <div class="carpentry-type-content">
+                        <h3>Decorative Beams & Coffered Ceilings</h3>
+                        <p>Add architectural interest and character to your ceilings with custom wood beams, coffered details, or decorative treatments. These elements create visual impact and can transform ordinary rooms into extraordinary spaces.</p>
+                    </div>
+                </div>
+                <div class="carpentry-type-card">
+                    <div class="carpentry-type-image">
+                        <img src="../images/custom-finishes.jpg" alt="Custom kitchen island">
+                    </div>
+                    <div class="carpentry-type-content">
+                        <h3>Custom Kitchen Islands & Bars</h3>
+                        <p>Enhance your kitchen or entertaining space with a custom-designed island or bar. We create functional, beautiful pieces that provide additional workspace, storage, and seating while serving as a centerpiece for your home.</p>
+                    </div>
+                </div>
+                <div class="carpentry-type-card">
+                    <div class="carpentry-type-image">
+                        <img src="../images/custom-finishes.jpg" alt="Custom closet organization">
+                    </div>
+                    <div class="carpentry-type-content">
+                        <h3>Custom Closet Systems</h3>
+                        <p>Maximize your storage space with custom-designed closet systems tailored to your specific needs. From walk-in closets to reach-ins, we create organized, efficient solutions that make the most of your available space.</p>
+                    </div>
+                </div>
+                <div class="carpentry-type-card">
+                    <div class="carpentry-type-image">
+                        <img src="../images/custom-finishes.jpg" alt="Custom wood columns">
+                    </div>
+                    <div class="carpentry-type-content">
+                        <h3>Architectural Millwork</h3>
+                        <p>Elevate your home's interior with custom architectural millwork including columns, pilasters, corbels, and other decorative elements. These details add sophistication and character that distinguish your home from others.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Benefits Section -->
+    <section class="service-benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Benefits of Custom Carpentry</h2>
+                <p>Why custom woodwork is a valuable addition to your home</p>
+            </div>
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-ruler-combined"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Perfect Fit</h3>
+                        <p>Custom carpentry is designed specifically for your space, ensuring perfect proportions and maximizing every inch of available area, unlike off-the-shelf solutions.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Unique Design</h3>
+                        <p>Express your personal style with one-of-a-kind pieces that reflect your taste and complement your home's architecture, creating truly distinctive spaces.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Superior Craftsmanship</h3>
+                        <p>Our skilled carpenters use traditional woodworking techniques and premium materials to create pieces with exceptional quality and attention to detail.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Optimized Functionality</h3>
+                        <p>Custom carpentry is designed around your specific needs and lifestyle, creating solutions that enhance how you use and enjoy your space.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Increased Home Value</h3>
+                        <p>Quality custom woodwork is a desirable feature that can significantly increase your property's market value and appeal to potential buyers.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Lasting Quality</h3>
+                        <p>Custom carpentry is built to last with superior materials and construction techniques, providing enduring beauty and functionality for generations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Process Section -->
+    <section class="service-process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Custom Carpentry Process</h2>
+                <p>A collaborative approach that brings your vision to life</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Initial Consultation</h3>
+                        <p>We begin with a thorough consultation to understand your vision, needs, and goals. We discuss your ideas, preferences, and how you plan to use the space, while also assessing the architectural context and taking preliminary measurements.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Design Development</h3>
+                        <p>Based on our consultation, we develop a custom design concept for your carpentry project. This includes detailed sketches or renderings, material recommendations, and finish options that bring your vision to life while addressing practical considerations.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Detailed Measurements</h3>
+                        <p>We take precise measurements of your space, accounting for all architectural elements, utilities, and other features that may impact the design. This ensures a perfect fit and seamless integration with your existing interior.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Material Selection</h3>
+                        <p>We help you select the perfect materials for your project, considering factors such as appearance, durability, maintenance requirements, and budget. From hardwoods and veneers to hardware and finishes, every component is carefully chosen.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Detailed Proposal</h3>
+                        <p>We provide a comprehensive proposal that includes final designs, material specifications, timeline, and transparent pricing. We review this with you in detail, making any necessary adjustments to ensure the project perfectly meets your expectations.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Fabrication</h3>
+                        <p>Our skilled craftsmen begin building your custom carpentry in our workshop. We use premium materials and traditional woodworking techniques combined with modern tools to ensure precision and quality. Complex pieces are often pre-assembled to verify fit and finish.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">7</div>
+                    <div class="step-content">
+                        <h3>Professional Installation</h3>
+                        <p>Our experienced installation team carefully transports and installs your custom carpentry with meticulous attention to detail. We ensure everything is perfectly level, securely anchored, and properly finished, with minimal disruption to your home.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">8</div>
+                    <div class="step-content">
+                        <h3>Finishing Touches</h3>
+                        <p>Once installation is complete, we apply any on-site finishes, adjust hardware, and ensure all components function perfectly. We pay special attention to details like trim work, edge treatments, and seamless transitions that elevate the final result.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">9</div>
+                    <div class="step-content">
+                        <h3>Final Inspection & Cleanup</h3>
+                        <p>We conduct a thorough inspection to ensure every detail meets our high standards of quality and craftsmanship. The work area is completely cleaned, debris is removed, and we walk through the project with you to ensure your complete satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Custom Carpentry Gallery</h2>
+                <p>Browse through some of our exceptional woodworking projects</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="../images/custom-finishes.jpg" alt="Custom built-in bookshelves">
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/custom-finishes.jpg" alt="Decorative ceiling beams">
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/custom-finishes.jpg" alt="Custom kitchen island">
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/custom-finishes.jpg" alt="Custom fireplace mantel">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about our custom carpentry services</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3 class="faq-question">How long does a custom carpentry project take?</h3>
+                    <p>The timeline varies depending on the scope and complexity of the project. Simple built-ins might take 2-3 weeks from design to installation, while more extensive or intricate projects can take 4-8 weeks or longer. During our consultation, we'll provide a specific timeline based on your project's requirements and our current schedule.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What types of wood do you work with?</h3>
+                    <p>We work with a wide variety of hardwoods and softwoods including oak, maple, cherry, walnut, mahogany, pine, and poplar. We also work with engineered wood products like medium-density fiberboard (MDF) and plywood when appropriate. The best choice depends on your design preferences, budget, and the specific requirements of your project.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Can you match existing woodwork in my home?</h3>
+                    <p>Yes, we specialize in matching existing woodwork to maintain consistency throughout your home. Our craftsmen can replicate most styles, profiles, and finishes, even if they're no longer commercially available. For historic homes, we take special care to ensure period-appropriate details that preserve your home's architectural integrity.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Do you provide design services or should I have my own design?</h3>
+                    <p>We offer comprehensive design services as part of our custom carpentry process. While you're welcome to bring your own designs or inspiration, our team can develop custom designs based on your ideas and needs. We'll work collaboratively with you to create a solution that perfectly fits your space and style preferences.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How do I maintain my custom woodwork?</h3>
+                    <p>Maintenance requirements depend on the type of wood and finish used. Generally, regular dusting with a soft cloth and occasional cleaning with appropriate wood cleaners is sufficient. For stained or natural wood, periodic application of furniture polish or wax may be recommended. We'll provide specific care instructions based on your project's materials and finishes to ensure long-lasting beauty.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Space with Custom Carpentry?</h2>
+                <p>Contact us today for a free, no-obligation consultation and quote</p>
+                <a href="tel:9162298763" class="btn btn-primary">Call (916) 229-8763</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Precision <span>Finish</span></h2>
+                    <p>Your partner in excellence for professional interior and exterior painting services. With over 40 years of combined experience, we offer unmatched quality and precision in every project. Discover the art of perfect finishes with us.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../services.html">Services</a></li>
+                        <li><a href="../gallery.html">Our Work</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="../services.html#interior">Interior Painting</a></li>
+                        <li><a href="../services.html#exterior">Exterior Painting</a></li>
+                        <li><a href="../services.html#cabinets">Cabinet Refinishing</a></li>
+                        <li><a href="../services.html#custom">Custom Finishes</a></li>
+                        <li><a href="../services.html#commercial">Commercial Painting</a></li>
+                        <li><a href="kitchen-cabinet-refinishing.html">Kitchen Cabinet Refinishing</a></li>
+                        <li><a href="home-exterior-repair.html">Home Exterior Repair</a></li>
+                        <li><a href="wall-paneling-installation.html">Wall Paneling Installation</a></li>
+                        <li><a href="interior-trim-installation.html">Interior Trim Installation</a></li>
+                        <li><a href="wainscoting.html">Wainscoting</a></li>
+                        <li><a href="custom-carpentry.html">Custom Carpentry</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 6040 Twin Suns Street, Roseville, CA 95747</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:9162298763">(916) 229-8763</a></li>
+                        <li><i class="fas fa-envelope"></i> admin'Precision</li>
+                    </ul>
+                    <div class="social-icons">
+                        <span><i class="fab fa-facebook-f"></i></span>
+                        <span><i class="fab fa-instagram"></i></span>
+                        <span><i class="fab fa-pinterest-p"></i></span>
+                        <span><i class="fab fa-houzz"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Precision Finish. All Rights Reserved.</p>
+                <p>
+                    <a href="../privacy-policy.html">Privacy Policy</a> |
+                    <a href="../terms-of-service.html">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

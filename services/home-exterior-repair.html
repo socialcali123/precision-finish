@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Home Exterior Repair in Roseville, CA | Precision Finish</title>
+    <meta name="description" content="Trusted home exterior repair services in Roseville, CA. Protect your property with expert siding repair, trim replacement, and exterior restoration. 40+ years of experience, free estimates. Call (916) 229-8763.">
+    <meta name="keywords" content="home exterior repair, Roseville CA, siding repair, trim replacement, exterior restoration, property maintenance, weather damage repair, Precision Finish">
+    <link rel="canonical" href="https://www.precisionfinish.com/services/home-exterior-repair.html">
+    <!-- Open Graph Meta Tags for social sharing -->
+    <meta property="og:title" content="Professional Home Exterior Repair in Roseville, CA | Precision Finish">
+    <meta property="og:description" content="Trusted home exterior repair services in Roseville, CA. Protect your property with expert siding repair, trim replacement, and exterior restoration.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.precisionfinish.com/services/home-exterior-repair.html">
+    <meta property="og:image" content="https://www.precisionfinish.com/images/home-exterior-repair-service.jpg">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles specific to service detail pages */
+        .service-hero {
+            height: 60vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/exterior-painting.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .service-overview {
+            padding: var(--spacing-xl) 0;
+        }
+        
+        .service-overview-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-lg);
+            align-items: center;
+        }
+        
+        .service-image {
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-slow);
+        }
+        
+        .service-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .service-benefits {
+            background-color: var(--light);
+            padding: var(--spacing-xl) 0;
+        }
+        
+        .benefits-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-lg);
+        }
+        
+        .benefit-item {
+            background-color: var(--white);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius-lg);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .benefit-icon {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin-right: var(--spacing-sm);
+            background-color: rgba(230, 126, 34, 0.1);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .service-process {
+            padding: var(--spacing-xl) 0;
+        }
+        
+        .process-steps {
+            margin-top: var(--spacing-lg);
+        }
+        
+        .process-step {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-lg);
+            align-items: flex-start;
+        }
+        
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background-color: var(--secondary-color);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+        
+        .gallery-section {
+            padding: var(--spacing-xl) 0;
+            background-color: var(--light);
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-lg);
+        }
+        
+        .gallery-item {
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            height: 250px;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-medium);
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .faq-section {
+            padding: var(--spacing-xl) 0;
+        }
+        
+        .faq-list {
+            margin-top: var(--spacing-lg);
+        }
+        
+        .faq-item {
+            margin-bottom: var(--spacing-md);
+            border-bottom: 1px solid var(--light);
+            padding-bottom: var(--spacing-md);
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            margin-bottom: var(--spacing-xs);
+            color: var(--primary-color);
+        }
+        
+        @media (max-width: 992px) {
+            .service-overview-content {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-md);
+            }
+            
+            .process-step {
+                grid-template-columns: 60px 1fr;
+            }
+            
+            .step-number {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Precision <span>Finish</span></h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="../services.html" class="dropdown-toggle active">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../services.html#interior">Interior Painting</a></li>
+                            <li><a href="../services.html#exterior">Exterior Painting</a></li>
+                            <li><a href="../services.html#cabinets">Cabinet Refinishing</a></li>
+                            <li><a href="../services.html#custom">Custom Finishes</a></li>
+                            <li><a href="../services.html#commercial">Commercial Painting</a></li>
+                            <li><a href="kitchen-cabinet-refinishing.html">Kitchen Cabinet Refinishing</a></li>
+                            <li><a href="home-exterior-repair.html">Home Exterior Repair</a></li>
+                            <li><a href="wall-paneling-installation.html">Wall Paneling Installation</a></li>
+                            <li><a href="interior-trim-installation.html">Interior Trim Installation</a></li>
+                            <li><a href="wainscoting.html">Wainscoting</a></li>
+                            <li><a href="custom-carpentry.html">Custom Carpentry</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../gallery.html">Our Work</a></li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Service Hero Section -->
+    <section class="hero" style="height: 50vh;">
+        <div class="hero-content">
+            <h1>Home Exterior Repair</h1>
+            <p>Professional exterior restoration and repair services</p>
+        </div>
+    </section>
+
+    <!-- Service Overview Section -->
+    <section class="service-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comprehensive Exterior Repair Services</h2>
+                <p>Restore your home's beauty and structural integrity with our expert repair solutions</p>
+            </div>
+            <div class="service-overview-content">
+                <div class="service-image">
+                    <img src="../images/exterior-painting.jpg" alt="Home exterior repair">
+                </div>
+                <div class="service-text">
+                    <p>At Precision Finish, we understand that your home's exterior is its first line of defense against the elements. Our comprehensive exterior repair services address damage, deterioration, and wear to restore both the appearance and structural integrity of your property.</p>
+                    
+                    <p>From minor repairs to major restoration projects, our skilled craftsmen have the expertise to handle all aspects of exterior repair, including siding replacement, trim repair, wood rot remediation, and structural fixes. We use only premium materials and proven techniques to ensure lasting results that protect your investment.</p>
+                    
+                    <p>Our meticulous approach begins with a thorough assessment to identify all issues, followed by a detailed plan to address each problem area. We don't just mask problems—we fix them properly at the source, preventing future damage and ensuring your home remains beautiful and protected for years to come.</p>
+                    
+                    <div class="service-cta">
+                        <a href="tel:9162298763" class="btn btn-primary">Call (916) 229-8763</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Benefits Section -->
+    <section class="service-benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Benefits of Professional Exterior Repair</h2>
+                <p>Why timely exterior repairs are essential for your home</p>
+            </div>
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Prevent Costly Damage</h3>
+                        <p>Addressing exterior issues early prevents them from developing into major structural problems that require expensive repairs.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Enhance Curb Appeal</h3>
+                        <p>Restored exteriors dramatically improve your home's appearance and make a positive impression on visitors and potential buyers.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Increase Property Value</h3>
+                        <p>Well-maintained exteriors contribute significantly to your home's market value and appeal to prospective buyers.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-thermometer-half"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Improve Energy Efficiency</h3>
+                        <p>Repairing gaps, cracks, and damaged areas helps prevent air leaks, improving your home's energy efficiency and comfort.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Prevent Pest Intrusion</h3>
+                        <p>Properly sealed and repaired exteriors eliminate entry points for insects, rodents, and other unwanted pests.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tint-slash"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Moisture Protection</h3>
+                        <p>Effective repairs prevent water infiltration that can lead to mold, mildew, and structural deterioration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Process Section -->
+    <section class="service-process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Exterior Repair Process</h2>
+                <p>A systematic approach to restoring your home's exterior</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Comprehensive Inspection</h3>
+                        <p>We begin with a thorough inspection of your home's exterior, identifying all damage, deterioration, and potential problem areas. Our experts examine siding, trim, fascia, soffits, windows, doors, and structural elements to create a complete assessment.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Detailed Proposal</h3>
+                        <p>Based on our inspection, we provide a detailed proposal outlining all necessary repairs, recommended solutions, material options, timeline, and transparent pricing. We take time to explain our findings and answer any questions you may have.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Preparation</h3>
+                        <p>Before beginning repairs, we properly prepare the work area by protecting landscaping, removing obstacles, and setting up necessary equipment. For extensive repairs, we may remove damaged materials to fully assess the extent of underlying issues.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Structural Repairs</h3>
+                        <p>We address any structural issues first, replacing damaged framing, reinforcing weakened areas, and ensuring a solid foundation for exterior finishes. Our carpenters use premium pressure-treated lumber and proper techniques to ensure lasting structural integrity.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Siding and Trim Repair</h3>
+                        <p>We repair or replace damaged siding, trim, fascia, and soffits using materials that match your existing exterior. Whether it's wood, fiber cement, vinyl, or composite materials, we ensure seamless integration with your home's current appearance.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Weather Protection</h3>
+                        <p>We install proper flashing, caulking, and weather-resistant barriers to protect against water infiltration and weather damage. These critical details prevent future problems and extend the life of your exterior finishes.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">7</div>
+                    <div class="step-content">
+                        <h3>Surface Preparation & Finishing</h3>
+                        <p>All repaired surfaces are properly prepared for finishing through cleaning, sanding, and priming. We then apply premium paints or stains that provide both protection and beautiful aesthetics, ensuring a cohesive look across your entire exterior.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">8</div>
+                    <div class="step-content">
+                        <h3>Final Inspection & Cleanup</h3>
+                        <p>We conduct a thorough inspection of all completed repairs to ensure everything meets our high standards. The work area is completely cleaned, debris is removed, and we walk through the project with you to ensure your complete satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Exterior Repair Gallery</h2>
+                <p>Browse through some of our successful exterior restoration projects</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="../images/exterior-painting.jpg" alt="Siding repair and replacement">
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/exterior-painting.jpg" alt="Trim and fascia restoration">
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/exterior-painting.jpg" alt="Wood rot remediation">
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/exterior-painting.jpg" alt="Complete exterior restoration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about our exterior repair services</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3 class="faq-question">How do I know if my home needs exterior repairs?</h3>
+                    <p>Signs that your home may need exterior repairs include visible cracks or gaps in siding, peeling or bubbling paint, rotting or soft wood, water stains on interior walls, increased energy bills, visible mold or mildew, and damaged or missing trim. If you notice any of these issues, it's best to have a professional assessment to prevent further damage.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Can you match my existing siding and trim when making repairs?</h3>
+                    <p>Yes, we specialize in matching existing materials and finishes to ensure repairs blend seamlessly with your home's current appearance. Our team has extensive experience working with all types of siding materials including wood, vinyl, fiber cement, and composite products.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How long do exterior repairs typically take to complete?</h3>
+                    <p>The timeline varies depending on the scope and complexity of the repairs needed. Minor repairs may be completed in 1-2 days, while more extensive restoration projects can take 1-2 weeks. We provide a detailed timeline during the proposal stage and keep you informed of our progress throughout the project.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Do you provide warranties on exterior repairs?</h3>
+                    <p>Yes, we stand behind our work with a comprehensive 5-year warranty on all exterior repairs. This covers any defects in workmanship or material failure under normal conditions. Additionally, many of the materials we use come with manufacturer warranties that we pass on to you.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Can exterior repairs be done in winter or rainy weather?</h3>
+                    <p>While we can perform some repairs year-round, certain aspects of exterior work require specific weather conditions. Temperature and moisture levels can affect material installation and finishing. We schedule work during appropriate weather windows to ensure optimal results and will communicate any weather-related delays.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Restore Your Home's Exterior?</h2>
+                <p>Contact us today for a free, no-obligation assessment and quote</p>
+                <a href="tel:9162298763" class="btn btn-primary">Call (916) 229-8763</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Precision <span>Finish</span></h2>
+                    <p>Your partner in excellence for professional interior and exterior painting services. With over 40 years of combined experience, we offer unmatched quality and precision in every project. Discover the art of perfect finishes with us.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../services.html">Services</a></li>
+                        <li><a href="../gallery.html">Our Work</a></li>
+                        <li><a href="../about.html">About Us</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="../services.html#interior">Interior Painting</a></li>
+                        <li><a href="../services.html#exterior">Exterior Painting</a></li>
+                        <li><a href="../services.html#cabinets">Cabinet Refinishing</a></li>
+                        <li><a href="../services.html#custom">Custom Finishes</a></li>
+                        <li><a href="../services.html#commercial">Commercial Painting</a></li>
+                        <li><a href="kitchen-cabinet-refinishing.html">Kitchen Cabinet Refinishing</a></li>
+                        <li><a href="home-exterior-repair.html">Home Exterior Repair</a></li>
+                        <li><a href="wall-paneling-installation.html">Wall Paneling Installation</a></li>
+                        <li><a href="interior-trim-installation.html">Interior Trim Installation</a></li>
+                        <li><a href="wainscoting.html">Wainscoting</a></li>
+                        <li><a href="custom-carpentry.html">Custom Carpentry</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 6040 Twin Suns Street, Roseville, CA 95747</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:9162298763">(916) 229-8763</a></li>
+                        <li><i class="fas fa-envelope"></i> admin'Precision</li>
+                    </ul>
+                    <div class="social-icons">
+                        <span><i class="fab fa-facebook-f"></i></span>
+                        <span><i class="fab fa-instagram"></i></span>
+                        <span><i class="fab fa-pinterest-p"></i></span>
+                        <span><i class="fab fa-houzz"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Precision Finish. All Rights Reserved.</p>
+                <p>
+                    <a href="../privacy-policy.html">Privacy Policy</a> |
+                    <a href="../terms-of-service.html">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

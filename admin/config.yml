@@ -1,0 +1,164 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+# Publish mode options:
+# - editorial_workflow: Content goes through drafts -> review -> ready before publishing
+# - simple: Content is published immediately when saved
+publish_mode: editorial_workflow
+
+# Media folder where uploaded images will be stored
+media_folder: "Precision Finish/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  # Main Pages
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "home"
+        label: "Home Page"
+        file: "Precision Finish/index.html"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Meta Description", name: "description", widget: "text"}
+          - {label: "Hero Title", name: "hero_title", widget: "string"}
+          - {label: "Hero Subtitle", name: "hero_subtitle", widget: "string"}
+          - label: "Services Overview"
+            name: "services_overview"
+            widget: "object"
+            fields:
+              - {label: "Section Title", name: "title", widget: "string"}
+              - {label: "Section Subtitle", name: "subtitle", widget: "string"}
+              - label: "Services"
+                name: "services"
+                widget: "list"
+                fields:
+                  - {label: "Icon", name: "icon", widget: "string", hint: "FontAwesome icon class (e.g., fa-home)"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Description", name: "description", widget: "text"}
+                  - {label: "Link", name: "link", widget: "string"}
+          - label: "Why Choose Us"
+            name: "why_choose_us"
+            widget: "object"
+            fields:
+              - {label: "Section Title", name: "title", widget: "string"}
+              - {label: "Section Subtitle", name: "subtitle", widget: "string"}
+              - label: "Benefits"
+                name: "benefits"
+                widget: "list"
+                fields:
+                  - {label: "Icon", name: "icon", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Description", name: "description", widget: "text"}
+          - label: "CTA Section"
+            name: "cta_section"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - {label: "Button Text", name: "button_text", widget: "string"}
+              - {label: "Button Link", name: "button_link", widget: "string"}
+      
+      - name: "about"
+        label: "About Page"
+        file: "Precision Finish/about.html"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Meta Description", name: "description", widget: "text"}
+          - {label: "Page Title", name: "page_title", widget: "string"}
+          - {label: "Page Subtitle", name: "page_subtitle", widget: "string"}
+          - {label: "Content", name: "content", widget: "markdown"}
+          - label: "Team Members"
+            name: "team_members"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Position", name: "position", widget: "string"}
+              - {label: "Photo", name: "photo", widget: "image"}
+              - {label: "Bio", name: "bio", widget: "text"}
+      
+      - name: "contact"
+        label: "Contact Page"
+        file: "Precision Finish/contact.html"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Meta Description", name: "description", widget: "text"}
+          - {label: "Page Title", name: "page_title", widget: "string"}
+          - {label: "Page Subtitle", name: "page_subtitle", widget: "string"}
+          - {label: "Contact Info", name: "contact_info", widget: "markdown"}
+          - label: "Contact Form"
+            name: "contact_form"
+            widget: "object"
+            fields:
+              - {label: "Form Title", name: "title", widget: "string"}
+              - {label: "Form Subtitle", name: "subtitle", widget: "string"}
+              - {label: "Submit Button Text", name: "submit_text", widget: "string"}
+
+  # Services
+  - name: "services"
+    label: "Services"
+    folder: "Precision Finish/services"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Meta Description", name: "description", widget: "text"}
+      - {label: "Featured Image", name: "featured_image", widget: "image"}
+      - {label: "Service Title", name: "service_title", widget: "string"}
+      - {label: "Service Subtitle", name: "service_subtitle", widget: "string"}
+      - {label: "Content", name: "content", widget: "markdown"}
+      - label: "Service Features"
+        name: "features"
+        widget: "list"
+        fields:
+          - {label: "Feature Title", name: "title", widget: "string"}
+          - {label: "Feature Description", name: "description", widget: "text"}
+      - label: "FAQ"
+        name: "faq"
+        widget: "list"
+        fields:
+          - {label: "Question", name: "question", widget: "string"}
+          - {label: "Answer", name: "answer", widget: "text"}
+
+  # Blog Posts
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "Precision Finish/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Meta Description", name: "description", widget: "text"}
+      - {label: "Featured Image", name: "featured_image", widget: "image"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Content", name: "content", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list"}
+
+  # Testimonials
+  - name: "testimonials"
+    label: "Testimonials"
+    folder: "Precision Finish/data/testimonials"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Client Name", name: "name", widget: "string"}
+      - {label: "Client Type", name: "type", widget: "string", hint: "e.g., Residential Client, Commercial Client"}
+      - {label: "Client Photo", name: "photo", widget: "image", required: false}
+      - {label: "Testimonial", name: "testimonial", widget: "text"}
+      - {label: "Rating", name: "rating", widget: "number", min: 1, max: 5, value_type: "int"}
+      - {label: "Date", name: "date", widget: "date"}
+
+  # Gallery/Projects
+  - name: "projects"
+    label: "Projects"
+    folder: "Precision Finish/data/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Project Title", name: "title", widget: "string"}
+      - {label: "Project Type", name: "type", widget: "select", options: ["interior", "exterior", "cabinet", "custom", "commercial"]}
+      - {label: "Project Image", name: "image", widget: "image"}
+      - {label: "Project Description", name: "description", widget: "text"}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false}
