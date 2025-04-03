@@ -222,6 +222,9 @@ header .container {
     font-weight: 500;
     position: relative;
     padding: 5px 0;
+    display: inline-block;
+    line-height: 1.5;
+    vertical-align: middle;
 }
 
 .nav-links a::after {
@@ -250,8 +253,10 @@ header .container {
 }
 
 .dropdown-toggle {
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    height: 100%;
+    vertical-align: middle;
 }
 
 .dropdown-toggle::after {
@@ -259,6 +264,9 @@ header .container {
     font-size: 0.7rem;
     margin-left: 5px;
     transition: transform var(--transition-fast);
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
 }
 
 .dropdown:hover .dropdown-toggle::after {
