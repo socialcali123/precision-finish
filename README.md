@@ -1,6 +1,7 @@
 # Precision Finish - Professional Painting Website
 
 A high-end converting website for an Exterior & Interior painting business.
+Deployed on Netlify for easy content management.
 
 ## Overview
 
