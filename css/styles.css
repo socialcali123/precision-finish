@@ -736,6 +736,15 @@ footer {
     color: var(--secondary-color);
 }
 
+.footer-contact ul li a {
+    color: var(--medium-light);
+    transition: color var(--transition-fast);
+}
+
+.footer-contact ul li a:hover {
+    color: var(--secondary-color);
+}
+
 .social-icons {
     display: flex;
     gap: 15px;
